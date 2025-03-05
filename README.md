@@ -1,6 +1,6 @@
 # 在 Python 中使用 HTTPX 进行网页抓取
 
-[![Promo](https://github.com/luminati-io/LinkedIn-Scraper/raw/main/Proxies%20and%20scrapers%20GitHub%20bonus%20banner.png)](https://www.bright.cn) 
+[![Promo](https://github.com/bright-cn/LinkedIn-Scraper/raw/main/Proxies%20and%20scrapers%20GitHub%20bonus%20banner.png)](https://www.bright.cn) 
 
 本指南将为你介绍如何使用 HTTPX（一个功能强大的 Python HTTP 客户端）来进行网页抓取，包括：
 
