@@ -1,6 +1,6 @@
 # 使用 Python 中的 HTTPX 进行网页爬虫
 
-[![促销](https://github.com/bright-cn/LinkedIn-Scraper/raw/main/Proxies%20and%20scrapers%20GitHub%20bonus%20banner.png)](https://www.bright.cn/) 
+[![促销](https://github.com/bright-cn/Awesome-Web-Scraping/raw/main/Proxies%20and%20scrapers%20GitHub%20bonus%20banner%20CN.png)](https://www.bright.cn/) 
 
 本指南介绍如何使用功能强大的 Python HTTP 客户端 HTTPX 进行网页爬虫：
 
