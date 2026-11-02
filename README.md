@@ -28,16 +28,17 @@
 
 ## 什么是 HTTPX？
 
-[HTTPX](https://github.com/projectdiscovery/httpx) 是一个功能齐全的 Python 3 HTTP 客户端，构建于 [`httpcore`](https://pypi.org/project/httpcore/) 库之上。即使在高强度多线程环境下，它也能提供可靠的性能。HTTPX 同时提供同步和异步 API，并支持 HTTP/1.1 和 HTTP/2 协议。
+[HTTPX](https://github.com/encode/httpx) 是一个功能齐全的 Python 3 HTTP 客户端，构建于 [`httpcore`](https://pypi.org/project/httpcore/) 库之上。即使在高强度多线程环境下，它也能提供可靠的性能。HTTPX 同时提供同步和异步 API，并支持 HTTP/1.1 和 HTTP/2 协议。
 
 **功能**
 
-- **简洁且模块化的代码库**：专为便于贡献和扩展而设计。
-- **快速且可配置**：提供完全可自定义的标志，用于探测多个元素。
-- **多样化的探测方法**：支持各种基于 HTTP 的探测技术。
-- **自动协议回退**：默认支持从 HTTPS 智能回退到 HTTP。
-- **灵活的输入选项**：接受主机、URL 和 CIDR 作为输入。
-- **高级功能**：支持代理、自定义 HTTP 标头、可配置的超时、基本身份验证等。
+- **兼容 Requests 的 API**：接口与 `requests` 基本一致，上手和迁移都很容易。
+- **同步与异步接口**：默认提供标准同步接口，需要时也可使用异步客户端。
+- **支持 HTTP/1.1 和 HTTP/2**：同时支持两种协议版本。
+- **直接请求 WSGI/ASGI 应用**：无需启动服务器即可向 Web 应用发送请求。
+- **全面的超时控制**：所有操作都有严格的超时设置。
+- **完整的类型注解**：代码完全类型化，测试覆盖率达到 100%。
+- **`requests` 的标准功能**：连接池与 Keep-Alive、Cookie 会话、HTTP(S) 代理、基本/摘要身份验证等。
 
 **优点**
 
@@ -286,7 +287,7 @@ response = httpx.get("https://httpbin.io/anything", headers=headers)
 
 ### 设置自定义 User-Agent
 
-[`User-Agent`](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/User-Agent) 是[网页爬虫最重要的 HTTP 标头](/blog/web-data/http-headers-for-web-scraping)之一。默认情况下，HTTPX 使用以下 `User-Agent`：
+[`User-Agent`](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/User-Agent) 是[网页爬虫最重要的 HTTP 标头](https://www.bright.cn/blog/web-data/http-headers-for-web-scraping)之一。默认情况下，HTTPX 使用以下 `User-Agent`：
 
 ```
 python-httpx/<VERSION>
@@ -472,7 +473,7 @@ with httpx.Client(transport=transport) as client:
 
 ## HTTPX 与 Requests 网页爬虫对比
 
-下表比较了 HTTPX 和[用于网页爬虫的 Requests](/blog/web-data/python-requests-guide)：
+下表比较了 HTTPX 和[用于网页爬虫的 Requests](https://www.bright.cn/blog/web-data/python-requests-guide)：
 
 | **功能** | **HTTPX** | **Requests** |
 | --- | --- | --- |
